@@ -1,0 +1,5 @@
+steps:
+  - name: us-central1-docker.pkg.dev/cloud-builders/docker
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/rpa-vertex-ai-sbx-e35a/cloud-run-source-deploy/firstrobot:$COMMIT_SHA', '.']
+images:
+  - 'us-central1-docker.pkg.dev/rpa-vertex-ai-sbx-e35a/cloud-run-source-deploy/firstrobot:$COMMIT_SHA'
